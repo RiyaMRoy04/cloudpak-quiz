@@ -13,8 +13,8 @@
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
-    "string-similarity": "^3.0.0",
     "secure-env": "*",
-    "vcap_services":"*"
+    "string-similarity": "^3.0.0",
+    "vcap_services": "^0.7.1"
   }
 }
