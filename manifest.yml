@@ -1,0 +1,15 @@
+---
+declared-services:
+  my-cloudant-db:
+    label: cloudantNoSQLDB
+    plan: Lite
+    
+applications:
+- path: .
+  memory: 64M
+  instances: 1
+  name: icp-quiz-app
+  disk_quota: 256M
+  random-route: false
+  services:
+  - my-cloudant-db
