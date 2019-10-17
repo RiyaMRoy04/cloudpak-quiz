@@ -19,6 +19,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/',function(req,res){
   res.sendFile("views/index.html", {"root": __dirname});
 });
+
 var cloudant = cloudant({account:credentials.username, password:credentials.password});
 
 var responsequiz1;
