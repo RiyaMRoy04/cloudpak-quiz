@@ -38,7 +38,7 @@ stages:
       #!/bin/bash
       # Push app
       if ! cf app "$CF_APP"; then 
-      cf create-service cloudantnosqldb Lite -c '{"name":"my-cloudant-db","region":"eu-gb"}'
+      cf create-service cloudantnosqldb Lite my-cloudant-db -c '{"region":"eu-gb"}'
         cf push "$CF_APP"
       else
         OLD_CF_APP="${CF_APP}-OLD-$(date +"%s")"
