@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Cloud Computing Quiz</title>
+    <title>Quiz</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,69 +14,69 @@
 
     <div class="container">
         <div class="py-5 text-center">
-        <h2>Cloud Computing Quiz</h2>
+        <h2>Quiz</h2>
         <p class="lead">Answer these multiple choice questions to earn goodies!</p>
         </div>
         <form method="POST" action="/quizsubmission">
         <p class="lead"></p>
           
-        1. You need an SSH server to get a bash shell inside a container.<br/>
+        1. 1. Each IBM Cloud Pak™ runs on:<br/>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_1" id="quiz_1" value="a" required> True
+        <input type="radio" name="quiz_1" id="quiz_1" value="a" required>Red Hat® OpenShift® on IBM Cloud
         </label>
         </div>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_1" id="quiz_1" value="b">False
+        <input type="radio" name="quiz_1" id="quiz_1" value="b">Red Hat® Enterprise Linux
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_1" id="quiz_1" value="c">Both A & B
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_1" id="quiz_1" value="c">Neither A & B
         </label>
         </div>
         <br/> 
-        2. Open-source container orchestration platforms, such as Docker Swarm and Kubernetes, provide what to their users?<br/>
+        2. 2. IBM Cloud Paks provide:<br/>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_2" id="quiz_2" value="a" required> A way to orchestrate different flavors of the same application in a way that maximizes reuse.
+        <input type="radio" name="quiz_2" id="quiz_2" value="a" required>Containerized IBM middleware and open source components.
         </label>
         </div>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_2" id="quiz_2" value="b">A fully hosted solution that is production-ready for deploying enterprise grade applications.
+        <input type="radio" name="quiz_2" id="quiz_2" value="b">Consistent added capabilities for deployment, lifecycle management, and production quality of service – logging, monitoring, version upgrade and roll-back, vulnerability assessment and testing.
         </label>
         </div>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_2" id="quiz_2" value="c">An easy-to-use GUI for operators to click and deploy applications.
+        <input type="radio" name="quiz_2" id="quiz_2" value="c">Certification by IBM to run on Red HatOpenShift, providing full software stack support,and regular security, compliance and versioncompatibility updates.
         </label>
         </div>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_2" id="quiz_2" value="d">A platform to help solve problems of running distributed containerized applications in production, such as high availability, scaling, fault tolerance, and scheduling.
-        </label>
-        </div>
-        <br/>
-        3. Which IBM Cloud compute option provides a serverless environment where you provide code snippets that run as a result of events?<br/>
-        <div class="radio">
-        <label>
-        <input type="radio" name="quiz_3" id="quiz_3" value="a" required> Cloud Foundry
-        </label>
-        </div>
-        <div class="radio">
-        <label>
-        <input type="radio" name="quiz_3" id="quiz_3" value="b"> Bare Metal Servers
-        </label>
-        </div>
-        <div class="radio">
-        <label>
-        <input type="radio" name="quiz_3" id="quiz_3" value="c"> OpenWhisk
-        </label>
-        </div>
-        <div class="radio">
-        <label>
-        <input type="radio" name="quiz_3" id="quiz_3" value="d"> Containers
+        <input type="radio" name="quiz_2" id="quiz_2" value="d">All the above
         </label>
         </div>
         <br/>
-        4. Which Kubernetes object manages external access to the services in a cluster, typically via HTTP?<br/>
+        3. IBM Cloud Paks for Applications can accelerate the ability to build cloud-native apps by leveraging built-in developer tools and processes, including support for microservices functions and serverless computing.<br/>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_3" id="quiz_3" value="a" required> True
+        </label>
+        </div>
+        <div class="radio">
+        <label>
+        <input type="radio" name="quiz_3" id="quiz_3" value="b"> False
+        </label>
+        </div>
+        <br/>
+        4. ____________ describes how pods that are part of a deployed workload can be accessed from outside of the Kubernetes cluster. Gives clients a well-defined target address/port combination across multiple pods, including across restarts and recreations of these pods.<br/>
         <div class="radio">
         <label>
         <input type="radio" name="quiz_4" id="quiz_4" value="a" required> Deployment
@@ -84,39 +84,39 @@
         </div>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_4" id="quiz_4" value="b"> ReplicaSet
+        <input type="radio" name="quiz_4" id="quiz_4" value="b"> Service
         </label>
         </div>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_4" id="quiz_4" value="c"> Ingress
+        <input type="radio" name="quiz_4" id="quiz_4" value="c"> StatefulSet
         </label>
         </div>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_4" id="quiz_4" value="d"> Volume
+        <input type="radio" name="quiz_4" id="quiz_4" value="d"> PersistenVolume/StorageClass
         </label>
         </div>
         <br/>  
-        5. Your application exposed one service, accessible from outside of the cluster. Which port type did it use?<br/>
+        5. ________________ are flexible and powerful custom Kubernetes resource definitions that can be used for deploying and managing containerized workloads in a Kubernetes environment. They can also be used for packaging applications, in a manner similar to Helm charts, or they can be used together with Helm, in a complementary manner.<br/>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_5" id="quiz_5" value="a" required> ClusterIP
+        <input type="radio" name="quiz_5" id="quiz_5" value="a" required> ConfigMap
         </label>
         </div>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_5" id="quiz_5" value="b"> NodePort
+        <input type="radio" name="quiz_5" id="quiz_5" value="b"> Deployment
         </label>
         </div>
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_5" id="quiz_5" value="c"> LoadBalancer
+        <input type="radio" name="quiz_5" id="quiz_5" value="c"> IBM Cloud Paks™
         </label>
         </div> 
         <div class="radio">
         <label>
-        <input type="radio" name="quiz_5" id="quiz_5" value="d"> ExternalName
+        <input type="radio" name="quiz_5" id="quiz_5" value="d"> Operators
         </label>
         </div> 
         <br/>

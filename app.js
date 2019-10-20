@@ -41,19 +41,19 @@ quizdb = cloudant.db.use(dbCredentials.dbName);
 
 
 app.post('/quizsubmission', function(req,res){
-    if(stringSimilarity.compareTwoStrings(req.body.quiz_1,'b')){
+    if(stringSimilarity.compareTwoStrings(req.body.quiz_1,'c')){
        counter++;
        }
     if(stringSimilarity.compareTwoStrings(req.body.quiz_2,'d')){
         counter++;
     }
-    if(stringSimilarity.compareTwoStrings(req.body.quiz_3,'c')){
+    if(stringSimilarity.compareTwoStrings(req.body.quiz_3,'a')){
        counter++;
        }
-    if(stringSimilarity.compareTwoStrings(req.body.quiz_4,'c')){
+    if(stringSimilarity.compareTwoStrings(req.body.quiz_4,'b')){
         counter++;
     }
-    if(stringSimilarity.compareTwoStrings(req.body.quiz_5,'b')){
+    if(stringSimilarity.compareTwoStrings(req.body.quiz_5,'d')){
        counter++;
        }
     var quizscore = counter;
