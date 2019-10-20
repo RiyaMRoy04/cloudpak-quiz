@@ -45,10 +45,10 @@ services:
       repo_name: '{{toolchain.name}}'
       repo_url: >
         $env.type === 'link' ? 
-          $env.app_repo : 'https://github.com/open-toolchain/node-hello-world'
+          $env.app_repo : 'https://github.com/RiyaMRoy04/cloudpak-quiz'
       source_repo_url: >
         $env.type === 'fork' || $env.type === 'clone' ? 
-          $env.app_repo : 'https://github.com/open-toolchain/node-hello-world'
+          $env.app_repo : 'https://github.com/RiyaMRoy04/cloudpak-quiz'
       type: $env.type || 'clone'
       has_issues: true
       enable_traceability: true
