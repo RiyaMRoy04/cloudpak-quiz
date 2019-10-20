@@ -37,7 +37,7 @@ cloudant.db.create(dbCredentials.dbName, function(err, res) {
         }
     });
 
-quizdb = cloudant.db.use(dbCredentials.dbname);
+quizdb = cloudant.db.use(dbCredentials.dbName);
 
 
 app.post('/quizsubmission', function(req,res){
@@ -66,7 +66,6 @@ app.post('/quizsubmission', function(req,res){
         responsequiz4: req.body.quiz_4,
         responsequiz5: req.body.quiz_5,
         time: new Date().toISOString(),
-        email: req.body.cloudemail,
         interested: req.body.interested
         };
     
