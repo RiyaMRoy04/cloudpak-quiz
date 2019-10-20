@@ -1,9 +1,4 @@
 ---
-declared-services:
-  my-cloudant-db:
-    label: cloudantNoSQLDB
-    plan: Lite
-    
 applications:
 - path: .
   memory: 64M
