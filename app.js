@@ -65,8 +65,7 @@ app.post('/quizsubmission', function(req,res){
         responsequiz3: req.body.quiz_3,
         responsequiz4: req.body.quiz_4,
         responsequiz5: req.body.quiz_5,
-        time: new Date().toISOString(),
-        interested: req.body.interested
+        time: new Date().toISOString()
         };
     
 quizdb.insert(doc,function(err,body,header){
